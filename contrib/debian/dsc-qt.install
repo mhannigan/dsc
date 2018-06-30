@@ -1,0 +1,6 @@
+usr/local/bin/dsc-qt usr/bin
+share/pixmaps/bitcoin32.xpm usr/share/pixmaps
+share/pixmaps/bitcoin16.xpm usr/share/pixmaps
+share/pixmaps/bitcoin128.png usr/share/pixmaps
+debian/dsc-qt.desktop usr/share/applications
+debian/dsc-qt.protocol usr/share/kde4/services/

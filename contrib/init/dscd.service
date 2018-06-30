@@ -1,0 +1,26 @@
+[Unit]
+Description=DSC's distributed currency daemon
+After=network.target
+
+[Service]
+User=dsc
+Group=dsc
+
+Type=forking
+PIDFile=/var/lib/dscd/dscd.pid
+
+ExecStart=/usr/bin/dscd -daemon -pid=/var/lib/dscd/dscd.pid \
+          -conf=/etc/dsc/dsc.conf -datadir=/var/lib/dscd
+
+ExecStop=-/usr/bin/dsc-cli -conf=/etc/dsc/dsc.conf \
+         -datadir=/var/lib/dscd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,26 @@
+# /etc/conf.d/dscd: config file for /etc/init.d/dscd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/dsc/dsc.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/dscd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/dscd.pid"
+
+# Where to write dscd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/dscd"
+
+# User and group to own dscd process
+#BITCOIND_USER="dsc"
+#BITCOIND_GROUP="dsc"
+
+# Path to dscd executable
+#BITCOIND_BIN="/usr/bin/dscd"
+
+# Nice value to run dscd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
