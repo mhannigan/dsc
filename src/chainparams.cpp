@@ -127,7 +127,7 @@ public:
         nTargetSpacing = 1 * 60;  // DSC: 1 minute
         nMaturity = 100;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 1000000000000 * COIN; 1 Trillion
+        nMaxMoneyOut = 100000000000 * COIN;  100b
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 1000;
@@ -136,7 +136,7 @@ public:
         nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
         nBlockEnforceSerialRange = 1001; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 1001; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 99999999999; //First block that bad serials emerged
+        nBlockFirstFraudulent = 9999999; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = 0; //Last valid accumulator checkpoint
         nBlockEnforceInvalidUTXO = 1001; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
